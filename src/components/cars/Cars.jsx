@@ -94,8 +94,18 @@ export const Cars = () => {
                   <td>{item.brand}</td>
                   <td>
                     <div className="d-flex gap-2">
-                      <button onClick={() => startEditing(index)}>Edit</button>
-                      <button onClick={() => deleteCar(index)}>Delete</button>
+                      <button
+                        className="btn btn-check"
+                        onClick={() => startEditing(index)}
+                      >
+                        Edit
+                      </button>
+                      <button
+                        className="btn btn-danger"
+                        onClick={() => deleteCar(index)}
+                      >
+                        Delete
+                      </button>
                     </div>
                   </td>
                 </tr>
