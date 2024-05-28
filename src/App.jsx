@@ -1,13 +1,15 @@
-import { Login } from "./components/login/Login";
+import { Routes, Route } from "react-router-dom";
+import { Login } from "./components/login//Login";
 import { Cars } from "./components/cars/Cars";
-import "./App.css";
 
 function App() {
   return (
     <>
-      <Login />
-
-      <Cars />
+      <h1 className="text-center">React-router-dom</h1>
+      <Routes>
+        <Route path="" element={<Login />} />
+        <Route path="cars" element={<Cars />} />
+      </Routes>
     </>
   );
 }
