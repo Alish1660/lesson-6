@@ -1,15 +1,9 @@
-import { Routes, Route } from "react-router-dom";
-import { Login } from "./components/login//Login";
-import { Cars } from "./components/cars/Cars";
+import { Routes, Route, Outlet } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <h1 className="text-center">React-router-dom</h1>
-      <Routes>
-        <Route path="" element={<Login />} />
-        <Route path="cars" element={<Cars />} />
-      </Routes>
+      <Outlet />
     </>
   );
 }

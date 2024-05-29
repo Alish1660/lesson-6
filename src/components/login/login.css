@@ -1,0 +1,33 @@
+form {
+  height: 200px;
+  margin-top: 80px;
+}
+.card {
+  max-width: 450px;
+  width: 100%;
+  background: transparent;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+.container_wrapper {
+  background: url("../../assets/login-bg.png");
+  height: 100vh;
+}
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn {
+  width: 200px;
+  color: chocolate;
+  font-size: 24px;
+  background-color: #fff;
+}
+.card-header h1 {
+  color: #fff;
+}
